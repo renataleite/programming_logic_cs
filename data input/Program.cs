@@ -7,23 +7,18 @@ namespace data_input
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your name:");
-            string name = Console.ReadLine();
-            Console.WriteLine("How many rooms do you have in your house?");
-            int bedrooms = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the product price:");
-            double price = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your name, age and height (same line):");
-            string[] profile = Console.ReadLine().Split();
-            string nameProfile = profile[0];
-            int ageProfile = int.Parse(profile[1]);
-            double heightProfile = double.Parse(profile[2]);
-            Console.WriteLine(name);
-            Console.WriteLine(bedrooms);
-            Console.WriteLine(price);
-            Console.WriteLine(nameProfile);
-            Console.WriteLine(ageProfile);
-            Console.WriteLine(heightProfile);
+            Console.WriteLine("What is the width measurement?");
+            double width = double.Parse(Console.ReadLine());
+            Console.WriteLine("What is the length measurement?");
+            double length = double.Parse(Console.ReadLine());
+            Console.WriteLine("How many square meters does the house have?");
+            double squareMeters = double.Parse(Console.ReadLine());
+
+            double area = width * length;
+            double price = area * squareMeters;
+
+            Console.WriteLine(area.ToString("F2"));
+            Console.WriteLine(price.ToString("F2"));
 
             /*int intNumber = int.Parse(Console.ReadLine());
             char caracter = char.Parse(Console.ReadLine());
