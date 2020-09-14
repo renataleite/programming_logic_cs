@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\data input\\data_input.csproj",
+      "projectUniqueName": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\data_input.csproj",
       "projectName": "data_input",
-      "projectPath": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\data input\\data_input.csproj",
+      "projectPath": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\data_input.csproj",
       "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\data input\\obj\\",
+      "outputPath": "C:\\Users\\renat\\Desktop\\Projects\\course_cs\\data input\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",
