@@ -1,0 +1,12 @@
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.exe
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.deps.json
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.runtimeconfig.json
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.runtimeconfig.dev.json
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.dll
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\bin\Debug\netcoreapp3.1\data_input.pdb
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.AssemblyInfoInputs.cache
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.AssemblyInfo.cs
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.csproj.CoreCompileInputs.cache
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.dll
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.pdb
+C:\Users\renat\Desktop\Projects\course_cs\data input\data input\obj\Debug\netcoreapp3.1\data_input.genruntimeconfig.cache
