@@ -6,15 +6,25 @@ namespace data_input
     {
         static void Main(string[] args)
         {
-            int x = int.Parse(Console.ReadLine());
-            int soma = 0;
-            while (x != 0)
+            string[] vet = Console.ReadLine().Split(" ");
+            int X = int.Parse(vet[0]);
+            int Y = int.Parse(vet[1]);
+
+            while (X != Y)
             {
-                soma = soma + x;
-                x = int.Parse(Console.ReadLine());
+
+                if (X < Y)
+                {
+                    Console.WriteLine("Crescente");
+                }
+                else
+                {
+                    Console.WriteLine("Decrescente");
+                }
+                vet = Console.ReadLine().Split(" ");
+                X = int.Parse(vet[0]);
+                Y = int.Parse(vet[1]);
             }
-            Console.WriteLine(soma);
-            Console.ReadLine();
         }
     }
 }
