@@ -6,24 +6,25 @@ namespace data_input
     {
         static void Main(string[] args)
         {
-            string[] vet = Console.ReadLine().Split(" ");
-            int X = int.Parse(vet[0]);
-            int Y = int.Parse(vet[1]);
-
-            while (X != Y)
+            int age = int.Parse(Console.ReadLine());
+            int counter = 0;
+            int sum = 0;
+           
+            if (age < 0)
             {
+                Console.WriteLine("Impossível de calcular");
+            }
+            else
+            {
+                while (age >= 0)
+                {
+                    sum += age;
+                    counter += 1;
 
-                if (X < Y)
-                {
-                    Console.WriteLine("Crescente");
+                    age = int.Parse(Console.ReadLine());
                 }
-                else
-                {
-                    Console.WriteLine("Decrescente");
-                }
-                vet = Console.ReadLine().Split(" ");
-                X = int.Parse(vet[0]);
-                Y = int.Parse(vet[1]);
+                double average = (double)sum / counter;
+                Console.WriteLine(average.ToString("F2"));
             }
         }
     }
