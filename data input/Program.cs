@@ -6,25 +6,37 @@ namespace data_input
     {
         static void Main(string[] args)
         {
-            int age = int.Parse(Console.ReadLine());
-            int counter = 0;
-            int sum = 0;
-           
-            if (age < 0)
+            int question = 1;
+            while (question == 1)
             {
-                Console.WriteLine("Impossível de calcular");
-            }
-            else
-            {
-                while (age >= 0)
-                {
-                    sum += age;
-                    counter += 1;
+                double sum = 0;
+                int counter = 0;
+                double X = 0;
 
-                    age = int.Parse(Console.ReadLine());
+                while (X != 2 && counter < 2)
+                {
+                    X = double.Parse(Console.ReadLine());
+
+                    if (X < 0 || X > 10)
+                    {
+                        Console.WriteLine("nota invalida");
+                    }
+                    else
+                    {
+                        sum += X;
+                        counter += 1;
+                    }
                 }
-                double average = (double)sum / counter;
-                Console.WriteLine(average.ToString("F2"));
+                double average = sum / counter;
+                Console.WriteLine("average = " + average);
+
+                Console.WriteLine("novo calculo (1-sim 2-nao)");
+                question = int.Parse(Console.ReadLine());
+                while (question != 1 && question != 2)
+                {
+                    Console.WriteLine("novo calculo (1-sim 2-nao)");
+                    question = int.Parse(Console.ReadLine());
+                }
             }
         }
     }
