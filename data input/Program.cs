@@ -1,42 +1,23 @@
-﻿using System;
+﻿
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 
-namespace data_input
+class URI
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int N = int.Parse(Console.ReadLine());
+        int[] vet = new int[N];
+
+        string[] s = Console.ReadLine().Split(" ");
+        
+        for (int i = 0; i < N; i++)
         {
-            int question = 1;
-            while (question == 1)
+            if (int.Parse(s[i])<0)
             {
-                double sum = 0;
-                int counter = 0;
-                double X = 0;
-
-                while (X != 2 && counter < 2)
-                {
-                    X = double.Parse(Console.ReadLine());
-
-                    if (X < 0 || X > 10)
-                    {
-                        Console.WriteLine("nota invalida");
-                    }
-                    else
-                    {
-                        sum += X;
-                        counter += 1;
-                    }
-                }
-                double average = sum / counter;
-                Console.WriteLine("average = " + average);
-
-                Console.WriteLine("novo calculo (1-sim 2-nao)");
-                question = int.Parse(Console.ReadLine());
-                while (question != 1 && question != 2)
-                {
-                    Console.WriteLine("novo calculo (1-sim 2-nao)");
-                    question = int.Parse(Console.ReadLine());
-                }
+                vet[i] = int.Parse(s[i]);
+                Console.WriteLine(vet[i]);
             }
         }
     }
