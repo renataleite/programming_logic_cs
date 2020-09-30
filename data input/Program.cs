@@ -7,18 +7,28 @@ class URI
 {
     static void Main(string[] args)
     {
-        int N = int.Parse(Console.ReadLine());
-        int[] vet = new int[N];
+        int N;
+        double sum;
+        double[] A;
+        string[] vet;
 
-        string[] s = Console.ReadLine().Split(" ");
-        
+        N = int.Parse(Console.ReadLine());
+        A = new double[N];
+
+        vet = Console.ReadLine().Split(" ");
+        sum = 0.0;
+
         for (int i = 0; i < N; i++)
         {
-            if (int.Parse(s[i])<0)
-            {
-                vet[i] = int.Parse(s[i]);
-                Console.WriteLine(vet[i]);
-            }
+            A[i] = double.Parse(vet[i]);
         }
+        for (int i = 0; i < N; i++)
+        {
+            Console.Write(A[i].ToString("F1") + " ");
+            sum += A[i];
+        }
+        Console.WriteLine();
+        Console.WriteLine(sum.ToString("F2"));
+        Console.WriteLine((sum / N).ToString("F2"));
     }
 }
