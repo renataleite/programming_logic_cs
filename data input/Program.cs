@@ -7,28 +7,37 @@ class URI
 {
     static void Main(string[] args)
     {
-        int N;
-        double sum;
-        double[] A;
-        string[] vet;
-
-        N = int.Parse(Console.ReadLine());
-        A = new double[N];
-
-        vet = Console.ReadLine().Split(" ");
-        sum = 0.0;
+        int N = int.Parse(Console.ReadLine());
+        int[,] mat;
+        mat = new int[N,N];
 
         for (int i = 0; i < N; i++)
         {
-            A[i] = double.Parse(vet[i]);
+            string[] vet = Console.ReadLine().Split(" ");
+            for (int j = 0; j < N; j++)
+            {
+                mat[i, j] = int.Parse(vet[j]);
+            }
         }
-        for (int i = 0; i < N; i++)
+
+        Console.WriteLine("Diagonal Principal:");
+
+        for (int i= 0; i <N; i++)
         {
-            Console.Write(A[i].ToString("F1") + " ");
-            sum += A[i];
+            Console.Write(mat[i, i] + " ");
         }
         Console.WriteLine();
-        Console.WriteLine(sum.ToString("F2"));
-        Console.WriteLine((sum / N).ToString("F2"));
+        int count = 0;
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < N; j++)
+            {
+                if(mat[i,j] < 0)
+                {
+                    count++;
+                }
+            }
+        }
+        Console.WriteLine("Quantidade de Negativos = " + count);
     }
 }
