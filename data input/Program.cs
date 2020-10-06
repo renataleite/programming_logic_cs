@@ -1,37 +1,53 @@
 ﻿
 using System;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
+using System.Diagnostics.Tracing;
+using System.Threading;
 
 class URI
 {
     static void Main(string[] args)
     {
-        string[] vet = Console.ReadLine().Split(" ");
-        int l = int.Parse(vet[0]);
-        int c = int.Parse(vet[1]);
-        
-        int[,] mat;
-        mat = new int[l,c];
+        int M = int.Parse(Console.ReadLine());
+        int N = int.Parse(Console.ReadLine());
 
-        for (int i = 0; i < l; i++)
+        double[,] A;
+
+        A = new double[M, N];
+
+        for (int i = 0; i < M; i++)
         {
-            vet = Console.ReadLine().Split(" ");
-            for (int j = 0; j < c; j++)
+            string[] vet = Console.ReadLine().Split(" ");
+            for (int j = 0; j < N; j++)
             {
-                mat[i, j] = int.Parse(vet[j]);
+                A[i, j] = double.Parse(vet[j]);
             }
         }
 
+        int linhaEscolhida = int.Parse(Console.ReadLine()) - 1;
 
-        for (int i = 0; i < l; i++)
+        for (int i = 0; i < M; i++)
         {
-            int sum = 0;
-            for (int j = 0; j < c; j++)
+            for (int j = 0; j < N; j++)
             {
-                sum += mat[i, j];
+                if (linhaEscolhida == i)
+                {
+                    if (j == 0)
+                    {
+                        Console.Write(A[linhaEscolhida, N - 1] + " ");
+                    }
+                    else
+                    {
+                        Console.Write(A[linhaEscolhida, j - 1] + " ");
+                    }
+                }
+                else
+                {
+                    Console.Write(A[i, j] + " ");
+                }
             }
-            Console.WriteLine(sum + " ");
+            Console.WriteLine();
         }
     }
 }
+
+
